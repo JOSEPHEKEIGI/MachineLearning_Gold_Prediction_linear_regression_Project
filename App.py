@@ -28,10 +28,26 @@ def Run_Model(data):
     model = model.fit(X_train,y_train)
     return model
 
+def Predict(model,value):
+    y_prediction = model.predict(value)
+    print(y_prediction)
 
+
+
+
+
+
+
+# def printMetrices()
+#     print('Mean Absolute Error:', metrics.mean_absolute_error(y_test, y_prediction))
+#     print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_prediction))
+#     print('Root Mean Squared Error:', metrics.mean_squared_error(y_test, y_prediction, squared=False))
+
+
+    
 data = GetDataAndClean(r'C:\Users\Cecilia Mwaura\Documents\Gold_Prediction_Project\Assets\goldstock.csv')
-Run_Model(data)
-
+model = Run_Model(data)
+Predict(model,2000)
     
 
 
