@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(235, 232, 232);
+}
+
+.header{
+   background-color: aquamarine;
+   align-items: center;
+   
+}
+
+.main{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banana-png{
+    background-color: rgb(149, 148, 146);
+    color: gold;scroll-snap-type: none;
+    
+}
+
+.Navigation-wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color:rgb(161, 161, 209);
+    padding: 3px 6px;
+}
+
+.Navigation-wrapper > * {
+    display: flex;
+    place-items: center;
+    
+    
+}
+
+#Menu-search, input{
+    border-radius: 8px;
+    padding: 5px 20px;
+    font-size: 16px;
+    
+
+}
