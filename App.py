@@ -24,11 +24,10 @@ def Run_Model(data):
     X_train,X_test, y_train, y_test = train_test_split(X,y, test_size=0.2, random_state=42)
     model = LinearRegression()
     model = model.fit(X_train,y_train)
-    return model
+    prediction = model.predict(X_test)
+    return prediction
 
-def Predict(model,value):
-    y_prediction = model.predict(value)
-    print(y_prediction)
+
 
 
 
@@ -45,7 +44,7 @@ def Predict(model,value):
     
 data = GetDataAndClean(r'C:\Users\Cecilia Mwaura\Documents\Gold_Prediction_Project\Assets\goldstock.csv')
 model = Run_Model(data)
-Predict(model,2000)
+
     
 
 
