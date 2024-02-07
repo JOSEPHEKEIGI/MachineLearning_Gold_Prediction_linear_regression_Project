@@ -23,7 +23,7 @@ def model(data):
 
 def Model_equation(attrib):
     # Y = MX + C
-    # Volume = Close * Coef + Intercept
+    # Close Price = ['Volume', 'Open', 'High', 'Low','Price_Spread'] * Coef + Intercept
     # ['Volume', 'Open', 'High', 'Low','Price_Spread']
     coef, intercept = attrib
     return coef , intercept
