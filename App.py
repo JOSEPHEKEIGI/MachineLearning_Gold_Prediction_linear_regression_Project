@@ -59,7 +59,7 @@ if uploaded_file is not None:
 
     
     #st.subheader('Model Equation')
-    coef_value, intercept_value = Model_equation((coefficients, intercept))#)
+    #coef_value, intercept_value = Model_equation((coefficients, intercept))#)
     
     #st.write(f'Predicted Close Price = (Coefficent Value : => {coef_value} *{selected_feature} ) + Y-Intercept Value: => {intercept_value}')
 
