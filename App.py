@@ -49,10 +49,10 @@ if uploaded_file is not None:
     st.write(data.head())
 
    
-    st.subheader('Training the Model')
+   # st.subheader('Training the Model')
     coefficients, intercept = model(data)
-    st.write('Coefficients:', coefficients)
-    st.write('Intercept:', intercept)
+   # st.write('Coefficients:', coefficients)
+   # st.write('Intercept:', intercept)
 
     
    
@@ -66,7 +66,7 @@ if uploaded_file is not None:
     low_price = st.number_input('Low Price')
     price_spread = high_price - low_price
     predicted_close = coef_value[0] * volume + coef_value[1] * open_price + coef_value[2] * high_price + coef_value[3] * low_price + coef_value[4] * price_spread + intercept_value
-    st.write(f'Predicted Close Price: {predicted_close}')
+    st.write(f'Predicted Close Price $: {predicted_close}')
 
 
 
