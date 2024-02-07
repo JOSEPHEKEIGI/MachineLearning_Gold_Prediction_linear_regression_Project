@@ -60,7 +60,7 @@ if uploaded_file is not None:
     
     st.subheader('Model Equation')
     coef_value, intercept_value = Model_equation((coefficients, intercept), features[selected_feature])
-    st.write(coef_value)
+    st.write(f'keigi Value {coef_value}')
     st.write(f'Predicted Close Price = (Coefficent Value : => {coef_value} *{selected_feature} ) + Y-Intercept Value: => {intercept_value}')
 
     
