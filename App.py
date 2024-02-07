@@ -55,13 +55,13 @@ if uploaded_file is not None:
     st.write('Intercept:', intercept)
 
    
-    selected_feature = st.selectbox('Select a feature:', list(features.keys()))
+    #selected_feature = st.selectbox('Select a feature:', list(features.keys()))
 
     
     st.subheader('Model Equation')
-    coef_value, intercept_value = Model_equation((coefficients, intercept), features[selected_feature])
+    coef_value, intercept_value = Model_equation((coefficients, intercept))
     st.write(f'{coef_value, intercept_value }')
-    st.write(f'Close Price = (Coefficent Value : => {coef_value} *{selected_feature} ) + Y-Intercept Value: => {intercept_value}')
+   # st.write(f'Close Price = (Coefficent Value : => {coef_value} *{selected_feature} ) + Y-Intercept Value: => {intercept_value}')
 
     
     st.subheader('Predict Close Price')
