@@ -55,13 +55,13 @@ if uploaded_file is not None:
     st.write('Intercept:', intercept)
 
    
-    selected_feature = st.selectbox('Select a feature:', list(features.keys()))
+    #selected_feature = st.selectbox('Select a feature:', list(features.keys()))
 
     
-    st.subheader('Model Equation')
-    coef_value, intercept_value = Model_equation((coefficients, intercept), features[selected_feature])
+    #st.subheader('Model Equation')
+    coef_value, intercept_value = Model_equation((coefficients, intercept))#)
     
-    st.write(f'Predicted Close Price = (Coefficent Value : => {coef_value} *{selected_feature} ) + Y-Intercept Value: => {intercept_value}')
+    #st.write(f'Predicted Close Price = (Coefficent Value : => {coef_value} *{selected_feature} ) + Y-Intercept Value: => {intercept_value}')
 
     
     st.subheader('Predict Close Price')
@@ -70,7 +70,7 @@ if uploaded_file is not None:
     high_price = st.number_input('High Price')
     low_price = st.number_input('Low Price')
     price_spread = high_price - low_price
-    predicted_close = coef_value * volume + coef_value['Volume'] * open_price + coef_value * high_price + coef_value * low_price + coef_value * price_spread + intercept_value
+    predicted_close = coef_value * volume + coef_value * open_price + coef_value * high_price + coef_value * low_price + coef_value * price_spread + intercept_value
     st.write(f'Predicted Close Price: {predicted_close}')
 
 
