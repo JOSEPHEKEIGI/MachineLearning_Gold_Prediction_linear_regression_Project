@@ -70,7 +70,7 @@ if uploaded_file is not None:
     high_price = st.number_input('High Price')
     low_price = st.number_input('Low Price')
     price_spread = high_price - low_price
-    predicted_close = coef_value * volume + coef_value * open_price + coef_value * high_price + coef_value * low_price + coef_value * price_spread + intercept_value
+    predicted_close = coef_value * volume + coef_value['Volume'] * open_price + coef_value * high_price + coef_value * low_price + coef_value * price_spread + intercept_value
     st.write(f'Predicted Close Price: {predicted_close}')
 
 
