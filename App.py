@@ -20,10 +20,6 @@ def model(data):
     return model.coef_ , model.intercept_
 
 
-data = GetData(r'C:\Users\Cecilia Mwaura\Documents\Gold_Prediction_Project\Assets\goldstock.csv')
-#print(model(data))
-attrib = model(data)
-
 def Model_equation(attrib, value):
     # Y = MX + C
     # Volume = Close * Coef + Intercept
@@ -40,7 +36,7 @@ features={
 }
  
 
-print(Model_equation(attrib,features['Volume']))
+
 
 
 
