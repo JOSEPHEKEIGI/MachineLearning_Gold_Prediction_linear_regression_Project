@@ -26,7 +26,7 @@ def Model_equation(attrib):
     # Volume = Close * Coef + Intercept
     # ['Volume', 'Open', 'High', 'Low','Price_Spread']
     coef, intercept = attrib
-    return coef[value] , intercept
+    return coef , intercept
 
 features={
     'Volume':0,
