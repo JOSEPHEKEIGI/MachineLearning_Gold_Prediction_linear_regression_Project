@@ -57,7 +57,9 @@ if uploaded_file is not None:
    
     st.subheader('Model Equation')
     coef_value, intercept_value = Model_equation((coefficients, intercept), features[selected_feature])
-    st.write(f'{selected_feature} = {coef_value} * {y} + {intercept_value}')
+    f'{selected_feature} = {coef_value} + {intercept_value}'
+
+    
 
 
 
